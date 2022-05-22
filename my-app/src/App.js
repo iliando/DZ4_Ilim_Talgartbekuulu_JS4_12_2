@@ -1,12 +1,12 @@
 import './App.css';
-import MainPage from "./pages/MainPage/MainPage";
+import {MainPage} from "./pages/MainPage/MainPage";
 
 function App() {
     const users = [
         {
             name: "Ilim",
             age: 17,
-            position: "Boxer"
+            position: "Programmer"
         },
         {
             name: "Jalil",
@@ -15,11 +15,15 @@ function App() {
         },
         {
             name: "Pele",
-            age: 65,
+            age: 81,
             position: "Footboller"
+        },
+        {
+            name: "Tyson",
+            age: 55,
+            position: "Boxer"
         }
     ]
-
     return (
         <div>
             <MainPage users={users}/>

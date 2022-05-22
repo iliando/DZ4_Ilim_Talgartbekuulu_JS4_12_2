@@ -1,4 +1,4 @@
-function Users (props) {
+export function Users (props) {
     return (
         <ul>
             {props.users.map((user, key) => {
@@ -13,5 +13,3 @@ function Users (props) {
         </ul>
     )
 }
-
-export default Users;

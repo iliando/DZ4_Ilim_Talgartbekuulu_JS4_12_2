@@ -1,7 +1,7 @@
 import React from "react";
-import Users from "../../components/users/Users";
+import {Users} from "../../components/users/Users";
 
-class MainPage extends React.Component {
+export class MainPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = (
@@ -12,7 +12,7 @@ class MainPage extends React.Component {
         this.onChangeInput = this.onChangeInput.bind(this)
     }
 
-    onChangeInput (e) {
+    onChangeInput(e) {
         this.setState({[e.target.name]: e.target.value})
         console.log(this.state)
     }
@@ -32,5 +32,4 @@ class MainPage extends React.Component {
         );
     }
 }
-export default MainPage;
 
